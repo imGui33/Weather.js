@@ -58,7 +58,7 @@ const displayResults = (weather) => {
 
 
 submitInput.addEventListener("click", () =>{
-    searchCoordsCity(inputCity.value)
+    // searchCoordsCity(inputCity.value)
     displayResults()
     
 })

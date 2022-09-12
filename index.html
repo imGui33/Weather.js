@@ -5,10 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./Components/styles/style.css">
 </head>
 <body>
-    <input type="text" class="inputCity" placeholder="digite a cidade">
-    <input type="submit" class="submit">
+    <div class="container">
+        <form class="searchCity" action="">
+            <input type="text" class="inputSearchCity">
+            <input type="submit">
+        </form>
+
+        <article class="information">
+            <h1>
+                <span class="CityName">
+                    Azerbaijan, Baku
+                </span>
+
+                <span class="temperature">
+                    13°C
+                </span>
+
+                <span class="now_weather">
+                    Sunny
+                </span>
+            </h1>
+
+            <div class="mais">
+                <h2>
+                    Humidity: <span classs="humidity"> 
+                        40%
+                    </span>
+                </h2>
+
+                <h2 class="speed_wind">
+                    Wind Speed: 13 km/hr
+                </h2>
+            </div>
+    </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./Components/scripts/script.js"></script>
