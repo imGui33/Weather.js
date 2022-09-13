@@ -6,7 +6,7 @@ const api = {
     lang: "pt_br",
     units: "metric"
 }
-let inputCity = document.querySelector(".inputCity")
+let inputCity = document.querySelector(".inputSearchCity")
 let submitInput = document.querySelector(".submit")
 
 
