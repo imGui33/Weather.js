@@ -8,46 +8,56 @@
     <link rel="stylesheet" href="./Components/styles/style.css">
 </head>
 <body class="sunny"> 
-    <div class="sunny_temperature">
+    <div class="temperature_img sunny">
         <img src="./Components/img/sunny.png" alt="">
+    </div>
+
+    <div class="temperature_img rain">
+        <img src="./Components/img/rain.png" alt="">
     </div>
 
     <div class="container_information">
         <header class="search_city">
             <form class="searchCityForm" action="">
                 <input type="text" class="inputSearchCity" placeholder="Search">
-                <input type="submit">
+                <button class="submit_btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+                <!-- <input type="submit"> -->
             </form>
         </header>
 
         <article class="information">
             <h1>
                 <span class="CityName">
-                    Azerbaijan, Baku
+                    City Example<br>
                 </span>
 
                 <span class="temperature">
-                    13°C<br>
+                    18 C°<br>
                 </span>
 
                 <span class="now_weather">
-                    Sunny
+                    Sunny <br>
                 </span>
             </h1>
 
             <div class="mais">
                 <h2>
-                    Humidity: <span classs="humidity"> 
-                        40%
+                    Humidade: <span class="humidity"> 
+                        80%
                     </span>
                 </h2>
 
-                <h2 class="speed_wind">
-                    Wind Speed: 13 km/hr
+                <h2>
+                    Velocidade do vento: <span class="speed_wind">
+                        100 KM/HR
+                    </span>
                 </h2>
             </div>
     </div>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./Components/scripts/script.js"></script>
 </body>

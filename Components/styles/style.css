@@ -18,7 +18,33 @@ body {
 body.sunny{
     background-color: #42C2FF;
 }
-.sunny_temperature{
+
+body.rain{
+    background-color: #A8AAC4;
+
+}
+
+
+body.sunny .rain{
+    display: none;
+}
+body.rain .rain{
+    display: block;
+}
+
+
+
+body.sunny .sunny{
+    display: block;
+}
+
+body.rain .sunny{
+    display: none;
+}
+
+
+
+.temperature_img{
     position: absolute;
     right: 150px;
     top: 0;
@@ -40,6 +66,8 @@ body.sunny{
 }
 .search_city{
     width: 100%;
+    height: 48px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +96,7 @@ body.sunny{
     font-size: 20px;
     font-weight: 400;
 }
-.inputSearchCity{
+.searchCityForm{
     width: 464px;
     height: 47px;
     border: none;
@@ -77,4 +105,31 @@ body.sunny{
     border-radius: 18px;
     outline: none;
     padding: 26px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
+.inputSearchCity{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}   
+
+.submit_btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+
+    
+}
+.submit_btn ion-icon{
+    width: 20px;
+    height: 20px;
+    
+    display: block; 
+}
+
